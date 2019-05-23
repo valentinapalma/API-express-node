@@ -146,7 +146,7 @@ Connection: keep-alive
 
 ## Week 21
 ### PUT User
-Test User to be replaced: Little Aaron (see POST)
+Test User to be replaced: Little Aaron (see POST)<br>
 Input to replace a user:
 ```
 curl -i -X PUT -H "Content-Type:application/json" localhost:2000/user/5ce66e180fd2ed2b70d43924 -d'{
