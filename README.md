@@ -8,6 +8,7 @@ curl -X GET localhost:2000/user | jq .
 ```
 <details>
   <summary> Output: </summary>
+  <p>
 ```
 [
   {
@@ -58,7 +59,7 @@ curl -X GET localhost:2000/user | jq .
   }
 ]
 ```
-</details>
+  </p></details>
 
 Input for single user:
 
