@@ -88,3 +88,17 @@ curl -X GET localhost:2000/user/5ce52123ea20d73f9c24fd4f | jq .
 }
 ```
   </p></details>
+### POST
+Input to add a user to the database:
+```
+curl -i -X POST -H "Content-Type:application/json" localhost:2000/user -d'{
+  "name": "Leanne Graham", 
+  "username":"Bret", 
+  "email":"Sincere@april.biz", 
+  "address" : {
+      "street":"Kulas Light",
+      "city":"Gwenborough",
+      "zipcode":"92998"
+      }
+   }'
+```   
