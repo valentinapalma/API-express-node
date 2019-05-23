@@ -201,3 +201,62 @@ Connection: keep-alive
 ```
 </p></details>
 
+<details>
+  <summary>### Viewing our Database in the Console.</summary>
+  <p>
+    
+Startup
+Input: `mongo`
+<details>
+  <summary>Output:</summary>
+  </p>
+  
+  ```
+MongoDB shell version v4.0.9
+connecting to: mongodb://127.0.0.1:27017/?gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("a7716669-4aff-4f88-972f-141d11965e43") }
+MongoDB server version: 4.0.9
+```
+  </p></details>
+Display availible databases.<br>
+Input: `show dbs`
+<details>
+  <summary>Output:</summary>
+  </p>
+  
+  ```
+admin   0.000GB
+ass     0.000GB
+config  0.000GB
+local   0.000GB
+
+```
+  </p></details>
+Switch to our database, ass.<br> 
+Input:`use ass`
+<details>
+  <summary>Output:</summary>
+  </p>
+  
+  ```
+switched to db ass
+
+```
+  </p></details>
+View users within database.
+Input: `db.users.find()`
+<details>
+  <summary>Output:</summary>
+  </p>
+  
+  ```
+{ "_id" : ObjectId("5ce52123ea20d73f9c24fd4f"), "name" : "Leanne Graham", "username" : "Bret", "email" : "Sincere@april.biz", "address" : { "street" : "Kulas Light", "city" : "Gwenborough", "zipcode" : "92998" }, "__v" : 0 }
+{ "_id" : ObjectId("5ce521a2ea20d73f9c24fd50"), "name" : "Ervin Howell", "username" : "Antonette", "email" : "Shana@melissa.tv", "address" : { "street" : "Victor Plains", "city" : "Wisokyburgh", "zipcode" : "90566" }, "__v" : 0 }
+{ "_id" : ObjectId("5ce651a6dc91af115c7bc99b"), "name" : "Clementine Bauch", "username" : "Samantha", "email" : "Nathan@yenisa.net", "address" : { "street" : "Lebsack Ln.", "city" : "Elvis South", "zipcode" : "76920" }, "__v" : 0 }
+{ "_id" : ObjectId("5ce65221dc91af115c7bc99c"), "name" : "Patrick Lebsack", "username" : "JoJo", "email" : "Julianne@kory.net", "address" : { "street" : "Lebsack Ln." }, "__v" : 0 }
+{ "_id" : ObjectId("5ce66e180fd2ed2b70d43924"), "name" : "Johan Samuelsson", "username" : "SomeUser", "email" : "user@gmail.com", "address" : { "street" : "Frejdens Väg", "city" : "Växjö", "zipcode" : "35255" }, "__v" : 0 }
+
+```
+
+  </p></details>
+  </p></details>
