@@ -69,8 +69,10 @@ Input for single user:
 curl -X GET localhost:2000/user/5ce52123ea20d73f9c24fd4f | jq .
 ```
 
-Output:
-
+<details>
+  <summary> Output: </summary>
+  <p>
+  
 ```
 {
   "address": {
@@ -85,3 +87,4 @@ Output:
   "__v": 0
 }
 ```
+  </p></details>
