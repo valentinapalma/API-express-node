@@ -6,7 +6,8 @@ Input for all Users in database:
 ```
 curl -X GET localhost:2000/user | jq .
 ```
-Output:
+<details>
+  <summary> Output: </summary>
 ```
 [
   {
@@ -58,7 +59,7 @@ Output:
 ]
 
 ```
-
+</details>
 Input for single user:
 
 ```
