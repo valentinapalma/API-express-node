@@ -9,7 +9,8 @@ curl -X GET localhost:2000/user | jq .
 <details>
   <summary> Output: </summary>
   <p>
-```json
+    
+```
 [
   {
     "address": {
@@ -59,6 +60,7 @@ curl -X GET localhost:2000/user | jq .
   }
 ]
 ```
+    
   </p></details>
 
 Input for single user:
