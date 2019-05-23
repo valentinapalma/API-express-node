@@ -1,7 +1,7 @@
 # Weekly Assignments
 
-# Week 20
-##GET User
+## Week 20
+### GET User
 Input for all Users in database:
 ```
 curl -X GET localhost:2000/user | jq .
