@@ -177,3 +177,27 @@ Connection: keep-alive
 ```
 
   </p></details>
+
+### PATCH User
+Test User to be changed: Johan Samuelsson (See PUT)<br>
+Input to Edit a user:
+```
+curl -i -X PATCH -H "Content-Type:application/json" localhost:2000/user/5ce65221dc91af115c7bc99c -d'{"username": "JoJo"}'
+```
+<details>
+  <summary> Output: </summary>
+  <p>
+
+```
+TP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 25
+ETag: W/"19-QrhlyPK966RH0U4rDY2T33CukS0"
+Date: Thu, 23 May 2019 10:06:25 GMT
+Connection: keep-alive
+
+ -JoJo has been updated.-
+```
+</p></details>
+
