@@ -1,13 +1,15 @@
 get = (req, res, next) => {
     console.log(req.params.id);
-    
     if(req.params.id) {
-        req.models.User.findById().then((user) => {
+        req.models.User.findById(
+            req.params.id,
+            req.body,
+        ).then((user) => {
             return res.send(user);
         }).catch((error) => {
             next(error)
         })
-    }else {
+    } else {
         req.models.User.find().then((users) => {
             return res.send(users);
         }).catch((error) => {
