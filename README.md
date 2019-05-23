@@ -200,9 +200,9 @@ Connection: keep-alive
  -JoJo has been updated.-
 ```
 </p></details>
-
+## Viewing our Mongo database in the console.
 <details>
-  <summary>### Viewing our Database in the Console.</summary>
+  <summary>View Section</summary>
   <p>
     
 Startup
