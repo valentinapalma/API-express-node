@@ -9,7 +9,7 @@ curl -X GET localhost:2000/user | jq .
 <details>
   <summary> Output: </summary>
   <p>
-```
+```json
 [
   {
     "address": {
