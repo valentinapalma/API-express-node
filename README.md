@@ -93,13 +93,53 @@ curl -X GET localhost:2000/user/5ce52123ea20d73f9c24fd4f | jq .
 Input to add a user to the database:
 ```
 curl -i -X POST -H "Content-Type:application/json" localhost:2000/user -d'{
-  "name": "Leanne Graham", 
-  "username":"Bret", 
-  "email":"Sincere@april.biz", 
+  "name": "Aaron", 
+  "username":"LittleAaron", 
+  "email":"aaron@april.biz", 
   "address" : {
-      "street":"Kulas Light",
-      "city":"Gwenborough",
-      "zipcode":"92998"
+      "street":"Fleur De Lis",
+      "city":"Arlington",
+      "zipcode":"76012"
       }
    }'
 ```   
+<details>
+  <summary> Output: </summary>
+  <p>
+   
+```
+TP/1.1 201 Created
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 30
+ETag: W/"1e-YTx+dLO2dm61SruAw5IffrD4+8E"
+Date: Thu, 23 May 2019 09:46:51 GMT
+Connection: keep-alive
+
+ -LittleAaron has been added.-
+```
+
+</p></details>
+
+## DELETE
+Input to remove a user:
+```
+curl -i -X DELETE localhost:2000/user/5ce66c0b0fd2ed2b70d43923
+```
+<details>
+  <summary> Output: </summary>
+  <p>
+
+```
+TP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 32
+ETag: W/"20-N0LX8yKQ/nqR4oZfDOSICcIq7To"
+Date: Thu, 23 May 2019 09:51:29 GMT
+Connection: keep-alive
+
+ -LittleAaron has been deleted.-
+```
+
+  </p></details>
