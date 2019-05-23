@@ -3,9 +3,12 @@
 # Week 20
 ##GET User
 Input for all Users in database:
-```curl -X GET localhost:2000/user | jq .```
+```
+curl -X GET localhost:2000/user | jq .
+```
 Output:
-```[
+```
+[
   {
     "address": {
       "street": "Kulas Light",
@@ -52,15 +55,20 @@ Output:
     "email": "Julianne@kory.net",
     "__v": 0
   }
-]```
+]
+
+```
 
 Input for single user:
 
-```curl -X GET localhost:2000/user/5ce52123ea20d73f9c24fd4f | jq .```
+```
+curl -X GET localhost:2000/user/5ce52123ea20d73f9c24fd4f | jq .
+```
 
 Output:
 
-```{
+```
+{
   "address": {
     "street": "Kulas Light",
     "city": "Gwenborough",
@@ -71,4 +79,5 @@ Output:
   "username": "Bret",
   "email": "Sincere@april.biz",
   "__v": 0
-}```
+}
+```
