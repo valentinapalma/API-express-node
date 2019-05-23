@@ -220,8 +220,10 @@ Implicit session: session { "id" : UUID("a7716669-4aff-4f88-972f-141d11965e43") 
 MongoDB server version: 4.0.9
 ```
   </p></details>
+  
 Display availible databases.<br>
 Input: `show dbs`
+
 <details>
   <summary>Output:</summary>
   </p>
@@ -234,8 +236,10 @@ local   0.000GB
 
 ```
   </p></details>
+  
 Switch to our database, ass.<br> 
 Input:`use ass`
+
 <details>
   <summary>Output:</summary>
   </p>
@@ -245,8 +249,10 @@ switched to db ass
 
 ```
   </p></details>
-View users within database.
+  
+View users within database.<br>
 Input: `db.users.find()`
+
 <details>
   <summary>Output:</summary>
   </p>
