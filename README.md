@@ -89,7 +89,7 @@ curl -X GET localhost:2000/user/5ce52123ea20d73f9c24fd4f | jq .
 ```
   </p></details>
   
-### POST
+### POST User
 Input to add a user to the database:
 ```
 curl -i -X POST -H "Content-Type:application/json" localhost:2000/user -d'{
@@ -121,7 +121,7 @@ Connection: keep-alive
 
 </p></details>
 
-## DELETE
+## DELETE User
 Input to remove a user:
 ```
 curl -i -X DELETE localhost:2000/user/5ce66c0b0fd2ed2b70d43923
@@ -140,6 +140,40 @@ Date: Thu, 23 May 2019 09:51:29 GMT
 Connection: keep-alive
 
  -LittleAaron has been deleted.-
+```
+
+  </p></details>
+
+## Week 21
+### PUT User
+Test User to be replaced: Little Aaron (see POST)
+Input to replace a user:
+```
+curl -i -X PUT -H "Content-Type:application/json" localhost:2000/user/5ce66e180fd2ed2b70d43924 -d'{
+  "name": "Johan Samuelsson", 
+  "username" : "SomeUser", 
+  "email": "user@gmail.com", 
+  "address" : {
+      "street":"Frejdens Väg", "city":"Växjö","zipcode":"35255"
+      }
+  }'
+  ```
+<details>
+  <summary> Output: </summary>
+  <p>
+
+
+```
+TP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: text/html; charset=utf-8
+Content-Length: 35
+ETag: W/"23-4fITJAaO8+0zr7quCJsUYvgBtws"
+Date: Thu, 23 May 2019 09:59:59 GMT
+Connection: keep-alive
+
+ -SomeUser has replaced this user.-
+
 ```
 
   </p></details>
