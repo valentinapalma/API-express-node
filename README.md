@@ -57,9 +57,9 @@ curl -X GET localhost:2000/user | jq .
     "__v": 0
   }
 ]
-
 ```
 </details>
+
 Input for single user:
 
 ```
